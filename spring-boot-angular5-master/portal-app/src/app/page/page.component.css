@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif !important;
+    background-image: url('/assets/backgroundul.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
+}* {box-sizing: border-box}
+
+
+
+.container {
+  position: relative;
+  width: auto;
+  top: 30%;
+}
+
+.top1 {
+  
+  float:left;
+  margin-left: auto;
+  font-size: 12px;
+  color: azure;
+}  
+
+.top2 {
+  
+  float:center;
+  font-size: 12px;
+  margin-left: auto;
+  color: azure;
+  text-align: center;
+}
+ 
+.top3 {
+  text-align: center;
+  float:right;
+  margin-left: auto;
+  font-size: 12px;
+  color: azure;
+} 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+img {
+  width:200px;
+  height:200px;
+  border: 1px solid whitesmoke;
+  border-radius: 13%;
+}
+
+img:hover{
+  width: 220px;
+  height: 220px;
+  border: 1px solid red;
+}
+
+.img1 {
+  align-content: center;
+}
+
+.img2 {
+  align-content: center;
+}
+
+.img3 {
+  align-content: center;
+}
+

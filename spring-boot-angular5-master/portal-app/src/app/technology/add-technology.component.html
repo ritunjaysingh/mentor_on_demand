@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body{
+    background-image: url('/assets/trainingcurrent.jpg');
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  #form{
+    max-width: 400px;
+    min-height: 500px;
+    font-size: 14px;
+    text-align: center;
+  }
+  button{
+    width: 50%;
+    font-size: 14px;
+    border-radius:25px;
+  }
+  input{
+
+    font-size: 14px;
+    border-radius:25px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<a routerLink="/admin" style="color: black"><h3>Back</h3></a>
+<br><br>
+<div id="form" class="container text-center">
+  <h2 class="text-center" style="font-size: 55px">Add Technology</h2>
+  <br><br>
+<form>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="technology.techName" placeholder="Technology Name" name="techName" class="form-control" id="techName">
+  </div>
+<br>
+  <div class="form-group">
+    <input [(ngModel)]="technology.description" placeholder="Description" name="description" class="form-control" id="description">
+  </div>
+<br><br>
+  <button class="btn btn-success" (click)="createTechnology()" routerLink="/admin">Create</button>
+</form>
+</div>

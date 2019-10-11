@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .image{
+			height: 156px;
+			width: 130px;
+			padding: 0px;
+			border-radius: 50px;
+			display: block;
+			  margin-left: auto;
+			  margin-right: auto;
+			border: 3px white;	
+		}
+		.image:hover{
+			width: 140px;
+			}
+     body{
+      background-image: url('/assets/home.jpg');
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    h1{
+      color: white;
+    }
+    .container{
+      color: white;
+    }
+    #button{
+      background-color: black;
+      color: white;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+  
+	  <a class="navbar-brand" routerLink="/trainerhome"><span class="glyphicon glyphicon-home"></span> Home</a>
+	  <a class="navbar-brand" routerLink="/trainerid"><span class="glyphicon glyphicon-user"></span> Profile</a>
+    <a class="navbar-brand" routerLink="/trainingmentor"><span class="glyphicon glyphicon-tasks"></span> Trainings</a>
+    </div>
+    
+  
+    <div class="nav navbar-nav navbar-right">
+      <button id="button" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span>Logout</button>
+    </div>
+    
+    
+  </div>
+</nav>
+</div>
+<div>
+  <h1 align = "center" id="l">Welcome Trainer</h1>
+
+</div>
+<div class="container">
+  <h1 style="color:ghostwhite; font-size: 38px; font-family: monospace;">Discover Your Perfect Program in our School</h1>
+  <br>
+  <div class="col-sm-2">
+    <a href ="https://www.edureka.co/blog/what-is-data-science/"><img src="./assets/pic1.jpg" class="image img-rounded"></a>
+  </div>
+  <br>
+  <div class="col-sm-2">
+    <a href ="https://searchenterpriseai.techtarget.com/definition/AI-Artificial-Intelligence"><img src="./assets/pic2.png" class="image img-rounded"></a>
+  </div>
+  <br>
+  <div class="col-sm-2">
+    <a href ="https://www.w3schools.com/whatis/whatis_fullstack.asp"><img src="./assets/pic6.jpg" class="image img-rounded"></a>
+  </div>
+  <br>
+  <div class="col-sm-2">
+    <a href ="https://runestone.academy/runestone/books/published/pythonds/Introduction/WhatIsProgramming.html"><img src="./assets/pic7.jpg" class="image img-rounded"></a>
+  </div>
+  <br>
+  <div class="col-sm-2">
+    <a href ="https://searchcloudcomputing.techtarget.com/definition/cloud-computing"><img src="./assets/pic5.jpg" class="image img-rounded"></a>
+  </div>
+
+</div>
+</body>
+</html>

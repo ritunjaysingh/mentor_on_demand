@@ -1,0 +1,52 @@
+<!Doctype html>
+<html>
+  <head>
+<style>
+  h1{
+    text-align: center;
+  }
+  table{
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+  }
+  body{
+    background-image: url('/assets/trainingcurrent.jpg');
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  button{
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+    <a routerLink="/admin" style="color: black"><h3>Back</h3></a>
+<div class="container text-center" style="overflow-x: auto;">
+  <br><br>
+  <h1 style="font-size: 55px"> Skill Details</h1>
+  <br><br>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Prerequisites</th>
+      <th>Table Of Contents</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let skill of skill">
+      <td>{{skill.id}}</td>
+      <td>{{skill.name}}</td>
+      <td>{{skill.prerequisites}}</td>
+      <td>{{skill.toc}}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  </body>
+  </html>

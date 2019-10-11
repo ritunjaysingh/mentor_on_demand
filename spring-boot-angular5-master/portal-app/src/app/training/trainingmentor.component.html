@@ -1,0 +1,78 @@
+<!Doctype html>
+<html>
+  <head>
+<style>
+  h1{
+    text-align: center;
+  }
+  table{
+    font-size: 12px;
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+  }
+  body{
+    background-image: url('/assets/trainingcurrent.jpg');
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
+  }
+  button{
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+    <a routerLink="/trainerhome" style="color: black"><h2>Back</h2></a>
+<div class="container-fluid text-center" style="overflow-x: auto;">
+  <br>
+  <h1  style="font-family: 'Acme', sans-serif; font-size: 55px">Training List</h1>
+  <br><Br>
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th >Id</th>
+      <th>Progress</th>
+      <th>Commission Amount</th>
+      <th>Rating</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Amount Received</th>
+      <th>Mentor Name</th>
+      <th>Amount To Mentor</th>
+      <th>User Name</th>
+      <th>Technology Name</th>
+      <th>Skill Name</th>
+      <th>Fees</th>
+      <th>Status</th>
+      <th>View Details</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let training of training">
+      <td>{{training.id}}</td>
+      <td>{{training.progress}}</td>
+      <td>{{training.commissionAmount}}</td>
+      <td>{{training.rating}}</td>
+      <td>{{training.startDate}}</td>
+      <td>{{training.endDate}}</td>
+      <td>{{training.startTime}}</td>
+      <td>{{training.endTime}}</td>
+      <td>{{training.amountReceived}}</td>
+      <td>{{training.mentor.firstName}}</td>
+      <td>{{training.amounttoMentor}}</td>
+      <td><span *ngFor="let user of training.users">{{user.firstName}}</span></td>
+      <td>{{training.technology.techName}}</td>
+      <td><span *ngFor="let skill of training.skills">{{skill.name}}</span></td>
+      <td>{{training.fees}}</td>
+      <td>{{training.status}}</td>
+      <td><a routerLink="/trainingdetailsformentor"><button type="button" class="btn btn-info btn-md">View</button></a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<br>
+</body>
+</html>
